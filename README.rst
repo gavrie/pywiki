@@ -2,6 +2,7 @@ Installation
 ============
 
 We will be using Python 2.7 along with these tools:
+
 * The `IPython <http://ipython.org/>`_ interactive environment
 * The `pytest <http://pytest.org/>`_ unit testing framework
 * The `Flask <http://flask.pocoo.org/>`_ Web micro-framework
