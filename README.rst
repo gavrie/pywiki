@@ -10,12 +10,13 @@ Ubuntu Users
 ------------
 
 #. Install the Python prerequisites::
-  sudo dpkg install python-pip 
-  sudo pip install ipython pytest flask
+
+    sudo dpkg install python-pip 
+    sudo pip install ipython pytest flask
 
 #. Test if it works::
 
-  ipython
+    ipython
 
 Windows Users
 -------------
@@ -24,10 +25,11 @@ The easiest method is to install ActivePython with PyPM.
 
 #. Install ActivePython from http://www.activestate.com/activepython/downloads
 #. Open Windows command prompt, and then::
-  pypm install pyreadline
-  pypm install ipython
-  pypm install pytest
-  pypm install flask
+
+    pypm install pyreadline
+    pypm install ipython
+    pypm install pytest
+    pypm install flask
 
 #. Test if it works by running IPython from the menu.
 
