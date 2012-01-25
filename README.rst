@@ -19,12 +19,14 @@ Windows Users
 
 The easiest method is to install ActivePython with PyPM.
 
- * Install ActivePython from http://www.activestate.com/activepython/downloads
- * Open Windows command prompt, and then::
-      pypm install pyreadline
-      pypm install ipython
-      pypm install pytest
-      pypm install flask
+Install ActivePython from http://www.activestate.com/activepython/downloads
+
+Open Windows command prompt, and then::
+
+  pypm install pyreadline
+  pypm install ipython
+  pypm install pytest
+  pypm install flask
 
 
 Documentation
