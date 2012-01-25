@@ -1,8 +1,7 @@
 import flask
-
 app = flask.Flask(__name__)
 
-import pages
+from mywiki import wiki
 
 @app.route("/")
 def index():
@@ -10,15 +9,15 @@ def index():
 
 @app.route("/wiki/<page>")
 def show(page):
-    return pages.render_plain(page)
+    return wiki.render_page(page)
 
 @app.route("/edit/<page>", methods=["GET", "POST"])
 def edit(page):
     if flask.request.method == "POST":
-        pages.update_contents(page, flask.request.form['contents'])
+        wiki.update_page(page, flask.request.form['contents'])
         return flask.redirect(flask.url_for('show', page=page))
     else:
-        return pages.render_edit(page)
+        return wiki.render_page_edit(page)
 
 if __name__ == "__main__":
     app.secret_key = "foobar"
