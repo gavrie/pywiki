@@ -12,7 +12,7 @@ Ubuntu Users
 
 #. Install the Python prerequisites::
 
-    sudo dpkg install python-pip 
+    sudo apt-get install python-pip 
     sudo pip install ipython pytest flask
 
 #. Test if it works::
