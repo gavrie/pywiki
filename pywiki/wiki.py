@@ -12,3 +12,6 @@ def render_page_edit(title):
 
 def update_page(title, contents):
     pages.set_page(title, contents)
+
+def render_toc():
+    return render.render_toc(pages.get_toc())

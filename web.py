@@ -19,6 +19,10 @@ def edit(page):
     else:
         return wiki.render_page_edit(page)
 
+@app.route("/contents")
+def contents():
+    return wiki.render_toc()
+
 if __name__ == "__main__":
     app.secret_key = "foobar"
     app.run(host='0.0.0.0', port=5000, debug=True)

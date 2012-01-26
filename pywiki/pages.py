@@ -11,7 +11,13 @@ class PageCollection(object):
         self._pages[title] = Page(title, content)
 
     def get(self, title):
-        return self._pages[title].content
+        if title in self._pages:
+            return self._pages[title].content
+        else:
+            return ""
+
+    def get_titles(self):
+        return self._pages.keys()
 
 #######################################
 
@@ -26,3 +32,6 @@ def get_page(title):
 
 def set_page(title, content):
     pages[title] = content
+
+def get_toc():
+    return pages.get_titles()

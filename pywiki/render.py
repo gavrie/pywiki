@@ -11,6 +11,7 @@ TEMPLATE_FOOTER = """
 <hr>
 <p>
    <a href="/wiki/Main Page">Main Page</a> | 
+   <a href="/contents">Contents</a> | 
    <a href="/edit/{title}">Edit this page</a>
 </p>
 """
@@ -59,3 +60,7 @@ def render_page(title, contents, edit=False):
 
     page = SEPARATOR.join([header, body, footer])
     return page
+
+
+def render_toc(titles):
+    return "<ul>" + "\n".join(["<li>{}".format(t) for t in sorted(titles)]) + "</ul>"
