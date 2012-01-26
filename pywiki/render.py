@@ -45,17 +45,10 @@ def render_page(title, contents, edit=False):
             out_lines.append(line)
         return "\n".join(out_lines)
 
-    def edit2html(text):
-        html = TEMPLATE_EDIT.format(text=text)
-        return html
-
     header = TEMPLATE_HEADER.format(title=title)
     footer = TEMPLATE_FOOTER.format(title=title)
 
-    if not edit:
-        body = wiki2html(contents)
-    else:
-        body = edit2html(contents)
+    body = wiki2html(contents)
 
     page = SEPARATOR.join([header, body, footer])
     return page
