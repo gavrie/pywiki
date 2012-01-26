@@ -40,5 +40,5 @@ Documentation
 
 * Python Documentation: http://docs.python.org/
 * Python Package Index (PyPI): http://pypi.python.org/pypi
-* Python static analysis tools: pyflakes (simple), pylint, pychecker
+* Python static analysis tools: `pyflakes <http://pypi.python.org/pypi/pyflakes>`_, pylint, pychecker
 * Flask web micro-framework: http://flask.pocoo.org/docs/quickstart/
