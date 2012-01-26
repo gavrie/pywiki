@@ -25,22 +25,21 @@ TEMPLATE_EDIT = """
 
 SEPARATOR = ""
 
-def wiki2html(text):
-    out_lines = []
-    for line in text.splitlines():
-        if line.strip() == '':
-            out_lines.append("<p>")
-        line = re.sub(r"\[([^]]+)\]", r'<a href="\1">\1</a>', line)
-        out_lines.append(line)
-    return "\n".join(out_lines)
-
-
-def edit2html(text):
-    html = TEMPLATE_EDIT.format(text=text)
-    return html
-
-
 def render_page(title, contents, edit=False):
+
+    def wiki2html(text):
+        out_lines = []
+        for line in text.splitlines():
+            if line.strip() == '':
+                out_lines.append("<p>")
+            line = re.sub(r"\[([^]]+)\]", r'<a href="\1">\1</a>', line)
+            out_lines.append(line)
+        return "\n".join(out_lines)
+
+    def edit2html(text):
+        html = TEMPLATE_EDIT.format(text=text)
+        return html
+
     header = TEMPLATE_HEADER.format(title=title)
     footer = TEMPLATE_FOOTER.format(title=title)
 

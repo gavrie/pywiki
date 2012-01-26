@@ -5,12 +5,13 @@ def cleanup(text):
 
 def test_page():
     title = "Test Page"
-    contents = "Some nice text."
+    contents = "Some nice text with a [Linked Page].\nAnd more text."
     result = """
 <h1>Our Nice Wiki</h1>
 <h2>Test Page</h2>
 <hr>
-Some nice text.
+Some nice text with a <a href="Linked Page">Linked Page</a>.
+And more text.
 <p>
 <hr>
 <p>
