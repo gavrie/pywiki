@@ -1,7 +1,7 @@
 import flask
 app = flask.Flask(__name__)
 
-from mywiki import wiki
+from pywiki import wiki
 
 @app.route("/")
 def index():
