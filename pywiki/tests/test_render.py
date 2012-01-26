@@ -13,7 +13,10 @@ def test_page():
 Some nice text.
 <p>
 <hr>
-<p><a href="/wiki/Main Page">Main Page</a> | <a href="/edit/Test Page">Edit this page</a></p>
+<p>
+<a href="/wiki/Main Page">Main Page</a> |
+<a href="/edit/Test Page">Edit this page</a>
+</p>\
 """
 
     assert cleanup(render.render_page(title, contents)) == result
