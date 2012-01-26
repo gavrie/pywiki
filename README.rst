@@ -47,6 +47,8 @@ Documentation
 Downloading the Code
 ====================
 
+(will be updated as the course progresses)
+
 .. #. Stage 1: http://github.com/gavrie/pywiki/zipball/stage1_pages
 .. #. Stage 2: http://github.com/gavrie/pywiki/zipball/stage2_render
 .. #. Stage 3: http://github.com/gavrie/pywiki/zipball/stage3_web
