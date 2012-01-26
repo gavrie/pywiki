@@ -38,4 +38,7 @@ The easiest method is to install ActivePython with PyPM.
 Documentation
 =============
 
-* Flask web stack: http://flask.pocoo.org/docs/quickstart/
+* Python Documentation: http://docs.python.org/
+* Python Package Index (PyPI): http://pypi.python.org/pypi
+* Python static analysis tools: pyflakes (simple), pylint, pychecker
+* Flask web micro-framework: http://flask.pocoo.org/docs/quickstart/
