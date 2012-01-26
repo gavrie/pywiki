@@ -28,11 +28,20 @@ SEPARATOR = ""
 def render_page(title, contents, edit=False):
 
     def wiki2html(text):
+        WIKI_LINK_RE   = r"""
+            \[              # Literal '['
+                (           # Start group
+                  [^]]+     # Any character except ']', one or more times
+                )           # End group
+            \]              # Literal ']'
+        """
+        WIKI_LINK_HTML = r'<a href="\1">\1</a>'
+
         out_lines = []
         for line in text.splitlines():
             if line.strip() == '':
                 out_lines.append("<p>")
-            line = re.sub(r"\[([^]]+)\]", r'<a href="\1">\1</a>', line)
+            line = re.sub(WIKI_LINK_RE, WIKI_LINK_HTML, line, flags=re.VERBOSE)
             out_lines.append(line)
         return "\n".join(out_lines)
 
