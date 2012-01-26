@@ -42,3 +42,9 @@ Documentation
 * Python Package Index (PyPI): http://pypi.python.org/pypi
 * Python static analysis tools: `pyflakes <http://pypi.python.org/pypi/pyflakes>`_, pylint, pychecker
 * Flask web micro-framework: http://flask.pocoo.org/docs/quickstart/
+
+
+Downloading the Code
+====================
+
+#. Stage 1: http://github.com/gavrie/pywiki/zipball/stage1_pages
