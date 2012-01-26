@@ -5,7 +5,7 @@ pages = {
 }
 
 def get_page(title):
-    return pages.get(title)
+    return pages[title]
 
 def set_page(title, content):
     pages[title] = content

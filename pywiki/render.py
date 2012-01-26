@@ -1,16 +1,16 @@
 import re
 
 TEMPLATE_HEADER = """
-    <h1>Our Nice Wiki</h1>
-    <h2>{title}</h2>
-    <hr>
-    """
+<h1>Our Nice Wiki</h1>
+<h2>{title}</h2>
+<hr>
+"""
 
 TEMPLATE_FOOTER = """
-    <p>
-    <hr>
-    <p><a href="/wiki/Main Page">Main Page</a> | <a href="/edit/{title}">Edit this page</a></p>
-    """
+<p>
+<hr>
+<p><a href="/wiki/Main Page">Main Page</a> | <a href="/edit/{title}">Edit this page</a></p>
+"""
 
 SEPARATOR = ""
 
