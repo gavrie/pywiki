@@ -1,3 +1,5 @@
+Welcome to the Python course at IBM.
+
 Installation
 ============
 
