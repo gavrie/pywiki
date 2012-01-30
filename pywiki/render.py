@@ -63,4 +63,13 @@ def render_page(title, contents, edit=False):
 
 
 def render_toc(titles):
-    return "<ul>" + "\n".join(["<li>{}".format(t) for t in sorted(titles)]) + "</ul>"
+    items = ["<li>{}".format(t) for t in sorted(titles)] 
+    parts = ["<ul>"] + items + ["</ul>"]
+    return "\n".join(parts)
+
+
+
+
+
+
+

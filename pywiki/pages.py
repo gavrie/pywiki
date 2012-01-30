@@ -17,7 +17,8 @@ class PageCollection(object):
             return ""
 
     def get_titles(self):
-        return self._pages.keys()
+        for page in self._pages:
+            yield page.title()
 
 #######################################
 
