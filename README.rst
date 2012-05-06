@@ -26,6 +26,9 @@ Windows Users
 
 The easiest method is to install ActivePython with PyPM.
 
+*Note: Even if you have a 64-bit version of Windows, please install the 32-bit version of ActivePython. 
+The 64-bit version is known to be problematic.*
+
 #. Install ActivePython from http://www.activestate.com/activepython/downloads
 #. Open Windows command prompt, and then::
 
