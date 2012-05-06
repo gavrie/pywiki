@@ -3,6 +3,10 @@ app = flask.Flask(__name__)
 
 from pywiki import wiki
 
+@app.route("/")
+def index():
+    return flask.redirect(flask.url_for('show', page='Main Page'))
+
 @app.route("/wiki/<page>")
 def show(page):
     return wiki.render_page(page)
