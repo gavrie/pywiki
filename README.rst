@@ -58,6 +58,8 @@ Downloading the Code
 #. Stage 2: http://github.com/gavrie/pywiki/zipball/stage2_render
 #. Stage 3: http://github.com/gavrie/pywiki/zipball/stage3_web
 
+The task: Make editing work as expected.
+
 .. #. Stage 4: http://github.com/gavrie/pywiki/zipball/stage4_edit
 .. #. Stage 5: http://github.com/gavrie/pywiki/zipball/stage5_memoize
 .. #. Stage 6: http://github.com/gavrie/pywiki/zipball/stage6_oop
