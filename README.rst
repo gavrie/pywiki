@@ -60,7 +60,6 @@ Downloading the Code
 #. Stage 4: http://github.com/gavrie/pywiki/zipball/stage4_edit
 #. Stage 5: http://github.com/gavrie/pywiki/zipball/stage5_memoize
 #. Stage 6: http://github.com/gavrie/pywiki/zipball/stage6_oop
-
-.. #. Stage 7: http://github.com/gavrie/pywiki/zipball/stage7_iter
-.. #. Stage 8: http://github.com/gavrie/pywiki/zipball/stage8_contents
-.. #. Stage 9: http://github.com/gavrie/pywiki/zipball/stage9_context
+#. Stage 7: http://github.com/gavrie/pywiki/zipball/stage7_iter
+#. Stage 8: http://github.com/gavrie/pywiki/zipball/stage8_contents
+#. Stage 9: http://github.com/gavrie/pywiki/zipball/stage9_context
